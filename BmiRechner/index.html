@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  </head>
+  <body>
+    <form class="bmi-calculator">
+      <h3>BMI - Rechner</h3>
+
+      <br />
+      <label for="height">Körpergröße in m:</label>
+      <input
+        type="number"
+        id="height"
+        name="height"
+        step="0.01"
+        min="0.5"
+        max="3"
+      />
+
+      <br />
+      <label for="weight">Gewicht in kg:</label>
+      <input type="number" id="weight" name="weight" min="10" max="300" />
+
+      <br />
+      <!-- <button id="calculate">BMI berechnen</button> -->
+      <div>Dein BMI ist: <span id="result"></span></div>
+
+      <div id="weight-normal" style="display: none;">Normalgewicht</div>
+      <div id="weight-below" style="display: none;">Untergewicht</div>
+      <div id="weight-above" style="display: none;">Übergewicht</div>
+    </form>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
